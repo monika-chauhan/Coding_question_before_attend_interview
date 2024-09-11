@@ -9,7 +9,7 @@ def Longest_substring_without_repeating_char(s):
             count[s[left]] -= 1
             left += 1
         length = max(length, right - left + 1)
-        print(count)
+     
         right += 1
     return length
 

@@ -10,7 +10,7 @@ def group_anagram(string):
         for s in string:
             num = ord(s)-ord('a')
             chars[num] += 1
-
+       
         return "_".join([str(i)+str(chars[i]) for i in range(27) if chars[i]])
 
     for s in string:
